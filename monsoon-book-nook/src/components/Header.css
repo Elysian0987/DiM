@@ -1,0 +1,23 @@
+.site-header {
+  background: #3a3a3a;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.site-header h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.site-header nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 15px;
+  font-size: 1.1em;
+}
+
+.site-header nav a:hover,
+.site-header nav a.active {
+  color: #87ceeb; /* Sky Blue */
+}
