@@ -5,12 +5,13 @@ import './Header.css';
 function Header() {
   return (
     <header className="site-header">
-      <h1>Monsoon Book Nook 🌧️📖</h1>
-      <nav>
-        <NavLink to="/">Home</NavLink>
-        <NavLink to="/reviews">Reviews</NavLink>
-        <NavLink to="/recommendations">Top Lists</NavLink>
-        <NavLink to="/about">About</NavLink>
+      <div className="logo">
+        <NavLink to="/">COFFEE & COZY</NavLink>
+      </div>
+      <nav className="main-nav">
+        <NavLink to="/reviews">REVIEWS</NavLink>
+        <NavLink to="/recommendations">LISTS</NavLink>
+        <NavLink to="/about">ABOUT</NavLink>
       </nav>
     </header>
   );
