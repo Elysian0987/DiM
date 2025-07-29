@@ -27,18 +27,28 @@ function Home() {
       <section className="curated-lists">
         <h2>Curated Collections</h2>
         <div className="lists-container">
-          <div className="list-card">
-            <h4>Books for a Rainy Afternoon</h4>
-            <p>Dive into these compelling stories.</p>
-          </div>
-          <div className="list-card">
-            <h4>Modern Classics</h4>
-            <p>Essential reads for every book lover.</p>
-          </div>
-          <div className="list-card">
-            <h4>Thought-Provoking Non-Fiction</h4>
-            <p>Books that make you think.</p>
-          </div>
+
+          <Link to="/list/rainy-day-reads" className="list-card-link">
+            <div className="list-card">
+              <h4>Books for a Rainy Afternoon</h4>
+              <p>Dive into these compelling stories.</p>
+            </div>
+          </Link>
+
+          <Link to="/list/modern-classics" className="list-card-link">
+            <div className="list-card">
+              <h4>Modern Classics</h4>
+              <p>Essential reads for every book lover.</p>
+            </div>
+          </Link>
+
+          <Link to="/list/non-fiction" className="list-card-link">
+            <div className="list-card">
+              <h4>Thought-Provoking Non-Fiction</h4>
+              <p>Books that make you think.</p>
+            </div>
+          </Link>
+
         </div>
       </section>
     </div>

@@ -12,6 +12,7 @@ function Header() {
         <NavLink to="/reviews">REVIEWS</NavLink>
         <NavLink to="/recommendations">LISTS</NavLink>
         <NavLink to="/about">ABOUT</NavLink>
+        <NavLink to="/contact">CONTACT</NavLink>
       </nav>
     </header>
   );
