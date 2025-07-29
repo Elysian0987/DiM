@@ -1,10 +1,18 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Header from './components/Header';
+import Footer from './components/Footer';
+
 import Home from './pages/Home';
 import Reviews from './pages/Reviews';
 import Recommendations from './pages/Recommendations';
 import About from './pages/About';
+import Contact from './pages/Contact';
+import SingleReview from './pages/SingleReview';
+// This import must match the file name and export type
+import CollectionPage from './pages/CollectionPage'; 
+
 import './App.css';
 
 function App() {
@@ -18,11 +26,13 @@ function App() {
             <Route path="/reviews" element={<Reviews />} />
             <Route path="/recommendations" element={<Recommendations />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/review/:id" element={<SingleReview />} />
+            {/* This route must use the correctly imported component */}
+            <Route path="/list/:collectionId" element={<CollectionPage />} />
           </Routes>
         </main>
-        <footer>
-          <p>&copy; 2025 Monsoon Book Nook</p>
-        </footer>
+        <Footer />
       </div>
     </Router>
   );
