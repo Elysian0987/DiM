@@ -1,15 +1,46 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+// Replace with a real book cover image URL
+const featuredBookCover = 'https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1565909496l/35959740.jpg';
 
 function Home() {
   return (
-    <div className="page-content">
-      <h2>Welcome to the Book Nook!</h2>
-      <p>Grab a cup of chai and find your next great read. This is a cozy corner of the internet dedicated to books that are perfect for a rainy day.</p>
-      <div className="featured-review">
-        <h3>This Month's Monsoon Read</h3>
-        <p><strong>The God of Small Things by Arundhati Roy</strong></p>
-        <p>A modern classic set in Kerala, its lush, descriptive prose perfectly matches the rainy season's mood. A must-read!</p>
-      </div>
+    <div className="home-page">
+      <section className="hero-section">
+        <h1>A thoughtful collection of curated reads.</h1>
+        <p>Your cozy corner for words and warmth.</p>
+      </section>
+
+      <section className="featured-review">
+        <div className="featured-image">
+          <img src={featuredBookCover} alt="Cover of Circe by Madeline Miller" />
+        </div>
+        <div className="featured-content">
+          <h3>CURRENTLY READING</h3>
+          <h2>Circe by Madeline Miller</h2>
+          <p>A breathtaking retelling of a classic myth, Circe is a story of defiant feminism, witchcraft, and finding your own power. An unforgettable read.</p>
+          <Link to="/reviews" className="styled-link">Read the full review &rarr;</Link>
+        </div>
+      </section>
+
+      <section className="curated-lists">
+        <h2>Curated Collections</h2>
+        <div className="lists-container">
+          <div className="list-card">
+            <h4>Books for a Rainy Afternoon</h4>
+            <p>Dive into these compelling stories.</p>
+          </div>
+          <div className="list-card">
+            <h4>Modern Classics</h4>
+            <p>Essential reads for every book lover.</p>
+          </div>
+          <div className="list-card">
+            <h4>Thought-Provoking Non-Fiction</h4>
+            <p>Books that make you think.</p>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
