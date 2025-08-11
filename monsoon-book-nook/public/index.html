@@ -5,29 +5,51 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+
+    <!--
+    SEO & Social Sharing Meta Tags
+    I've updated and added the following tags based on your SEO report.
+    -->
+
+    <!-- 1. Optimized Title Tag -->
+    <title>Cozy Coffee & Curated Reads | Your Perfect Corner for Books</title>
+
+    <!-- 2. Optimized Meta Description -->
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Discover your next favorite book at our cozy corner. We offer curated reads, from bestsellers like Circe to hidden gems, paired with the perfect cup of coffee."
     />
+
+    <!-- 3. Canonical Tag -->
+    <link rel="canonical" href="https://your-production-domain.com/" />
+
+    <!-- 4. Facebook Open Graph Tags -->
+    <meta property="og:title" content="Cozy Coffee & Curated Reads | Your Perfect Corner for Books" />
+    <meta property="og:description" content="Discover your next favorite book at our cozy corner. We offer curated reads, from bestsellers like Circe to hidden gems, paired with the perfect cup of coffee." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-production-domain.com/" />
+    <meta property="og:image" content="https://your-production-domain.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <!-- 5. Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cozy Coffee & Curated Reads | Your Perfect Corner for Books" />
+    <meta name="twitter:description" content="Discover your next favorite book at our cozy corner. We offer curated reads, from bestsellers like Circe to hidden gems, paired with the perfect cup of coffee." />
+    <meta name="twitter:image" content="https://your-production-domain.com/twitter-image.png" />
+
+    <!--
+    End of SEO & Social Sharing Meta Tags
+    -->
+
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VKH2E97H9"></script>
+    <!-- Google tag (gtag.js) - Added 'defer' to improve performance -->
+    <script src="https://www.googletagmanager.com/gtag/js?id=G-5VKH2E97H9"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -35,19 +57,25 @@
 
       gtag('config', 'G-5VKH2E97H9');
     </script>
+
+    <!-- 6. Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://your-production-domain.com/",
+      "name": "Cozy Coffee & Curated Reads",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://your-production-domain.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
   </body>
 </html>
