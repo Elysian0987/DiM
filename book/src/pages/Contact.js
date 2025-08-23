@@ -15,10 +15,11 @@ function Contact() {
         </div>
         <p>You can also find me here:</p>
         <div className="contact-info">
-          <strong>Instagram:</strong> <a href="#">@coffeeandcozyreads</a>
+          {/* Add the full URL to your social media profile */}
+          <strong>Instagram:</strong> <a href="https://www.instagram.com/coffeeandcozyreads" target="_blank" rel="noopener noreferrer">@coffeeandcozyreads</a>
         </div>
         <div className="contact-info">
-          <strong>Twitter:</strong> <a href="#">@cozyreads</a>
+          <strong>Twitter:</strong> <a href="https://www.twitter.com/cozyreads" target="_blank" rel="noopener noreferrer">@cozyreads</a>
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@ import Contact from './pages/Contact';
 import SingleReview from './pages/SingleReview';
 // This import must match the file name and export type
 import CollectionPage from './pages/CollectionPage'; 
+import AddReviewPage from './pages/AddReviewPage';
 
 import './App.css';
 
@@ -30,6 +31,7 @@ function App() {
             <Route path="/review/:id" element={<SingleReview />} />
             {/* This route must use the correctly imported component */}
             <Route path="/list/:collectionId" element={<CollectionPage />} />
+            <Route path="/add-review" element={<AddReviewPage />} /> {/* <-- 2. ADD THE ROUTE */}
           </Routes>
         </main>
         <Footer />

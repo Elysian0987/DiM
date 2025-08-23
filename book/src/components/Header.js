@@ -13,6 +13,7 @@ function Header() {
         <NavLink to="/recommendations">LISTS</NavLink>
         <NavLink to="/about">ABOUT</NavLink>
         <NavLink to="/contact">CONTACT</NavLink>
+        <NavLink to="/add-review">Add a Review</NavLink>
       </nav>
     </header>
   );
