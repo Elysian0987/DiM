@@ -5,39 +5,95 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+
+    <!--
+    SEO & Social Sharing Meta Tags
+    I've updated and added the following tags based on your SEO report.
+    -->
+
+    <!-- 1. Optimized Title Tag (Made longer for better pixel width) -->
+    <title>Cozy Coffee & Curated Reads - The Ultimate Destination for Bestselling Books, Hidden Gems, and Artisanal Coffee</title>
+
+    <!-- 2. Optimized Meta Description (Updated to match new title) -->
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Escape into a world of literary wonders at Cozy Coffee & Curated Reads. Explore our vast collection of books, from chart-topping bestsellers like Circe to unique, curated hidden gems. Enjoy our artisanal coffee in a warm, inviting atmosphere perfect for reading."
     />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
 
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
+    <!-- 3. Canonical Tag -->
+    <link rel="canonical" href="https://your-production-domain.com/" />
+
+    <!-- 4. Facebook Open Graph Tags -->
+    <meta property="og:title" content="Cozy Coffee & Curated Reads - The Ultimate Destination for Bestselling Books, Hidden Gems, and Artisanal Coffee" />
+    <meta property="og:description" content="Escape into a world of literary wonders at Cozy Coffee & Curated Reads. Explore our vast collection of books, from chart-topping bestsellers like Circe to unique, curated hidden gems." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://your-production-domain.com/" />
+    <meta property="og:image" content="https://your-production-domain.com/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+
+
+    <!-- 5. Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Cozy Coffee & Curated Reads - The Ultimate Destination for Bestselling Books, Hidden Gems, and Artisanal Coffee" />
+    <meta name="twitter:description" content="Escape into a world of literary wonders at Cozy Coffee & Curated Reads. Explore our vast collection of books, from chart-topping bestsellers like Circe to unique, curated hidden gems." />
+    <meta name="twitter:image" content="https://your-production-domain.com/twitter-image.png" />
+
+    <!--
+    End of SEO & Social Sharing Meta Tags
     -->
-    <title>React App</title>
+
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5VKH2E97H9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-5VKH2E97H9');
+    </script>
+
+    <!-- 6. Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://your-production-domain.com/",
+      "name": "Cozy Coffee & Curated Reads",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://your-production-domain.com/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <!-- Content for browsers with JavaScript disabled and for SEO crawlers -->
+    <noscript>
+      <h1>Welcome to Cozy Coffee & Curated Reads</h1>
+      <p>
+        Step into a haven designed for book lovers and coffee aficionados alike. At Cozy Coffee & Curated Reads, we believe in the magic of a good book and the comfort of a perfect cup of coffee. Our space is more than just a shop; it's a community hub where stories come to life and friendships are brewed over our finest artisanal blends. We've created an inviting atmosphere where you can escape the hustle and bustle, sink into a comfortable chair, and lose yourself in a world of words.
+      </p>
+
+      <h2>Discover Your Next Favorite Story</h2>
+      <p>
+        Our shelves are filled with a thoughtfully selected collection of books that cater to every taste. We pride ourselves on our curation, offering everything from timeless classics and critically-acclaimed bestsellers, like the enchanting 'Circe', to compelling hidden gems from debut authors waiting to be discovered. Whether you're a fan of sweeping fantasies, thrilling mysteries, insightful non-fiction, or heartfelt poetry, our collection is sure to hold your next great adventure. Our knowledgeable staff are passionate readers themselves and are always on hand to offer a personalized recommendation.
+      </p>
+      
+      <h3>More Than Just a Bookstore</h3>
+      <p>
+        The experience at Cozy Coffee & Curated Reads is completed by our in-house coffee bar. We source high-quality beans and train our baristas to craft the perfect beverage to accompany your reading. From a rich, dark espresso to a creamy latte or a refreshing iced tea, we have something to satisfy every craving. We also offer a selection of delicious pastries and light snacks, making our shop the ideal spot for a quiet morning, a productive afternoon of work, or a relaxing evening. We are committed to creating a warm, welcoming environment for everyone in our community.
+      </p>
+    </noscript>
+
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <!-- The main React application will be rendered inside this div -->
   </body>
 </html>
