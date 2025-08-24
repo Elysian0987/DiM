@@ -13,6 +13,8 @@ import SingleReview from './pages/SingleReview';
 // This import must match the file name and export type
 import CollectionPage from './pages/CollectionPage'; 
 import AddReviewPage from './pages/AddReviewPage';
+import BooksPage from './pages/BooksPage';
+import BookDetailPage from './pages/BookDetailPage';
 
 import './App.css';
 
@@ -32,6 +34,8 @@ function App() {
             {/* This route must use the correctly imported component */}
             <Route path="/list/:collectionId" element={<CollectionPage />} />
             <Route path="/add-review" element={<AddReviewPage />} /> {/* <-- 2. ADD THE ROUTE */}
+            <Route path="/books" element={<BooksPage />} /> {/* <-- ADD BOOK LIST ROUTE */}
+            <Route path="/book/:id" element={<BookDetailPage />} /> {/* <-- ADD DYNAMIC DETAIL ROUTE */}
           </Routes>
         </main>
         <Footer />
