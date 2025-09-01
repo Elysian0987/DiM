@@ -1,5 +1,12 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /admin/
+Disallow: /private
+Disallow: /.env
+Disallow: /api/
+Allow: /public/
+Allow: /reviews
+Allow: /about
+Allow: /contact
+Crawl-delay: 1
 
-Sitemap: https://di-4u8el66oa-elysian0987s-projects.vercel.app/sitemap.xml
+Sitemap: https://di-m-git-main-elysian0987s-projects.vercel.app/sitemap.xml
