@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MongoDB Data Viewer</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; }
+    h1 { color: #333; }
+    pre { background: #f4f4f4; padding: 1em; border-radius: 5px; }
+  </style>
+</head>
+<body>
+  <h1>Book Reviews from MongoDB</h1>
+  <div id="data">Loading...</div>
+  <script>
+    fetch('/api/dbData')
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById('data').innerHTML = `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+      })
+      .catch(err => {
+        document.getElementById('data').textContent = 'Error fetching data.';
+      });
+  </script>
+</body>
+</html>
